@@ -1,4 +1,6 @@
-//main.ts
+# main.ts
+
+```js
 //should import dotenv in main.ts
 import * as dotenv from 'dotenv';
 dotenv.config();
@@ -10,8 +12,9 @@ dotenv.config();
     .setVersion('1.0')
     .addTag('products')
     .build();
-
-//prisma service.ts
+```
+# prisma service.ts
+```js
 import { Injectable, OnModuleInit } from "@nestjs/common";
 import { PrismaClient } from "@prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg";
@@ -31,9 +34,10 @@ export class PrismaService extends PrismaClient implements OnModuleInit {
         await this.$connect();
     }
 }
+```
 
-//prisma config.ts
-
+# prisma config.ts
+```js
 import "dotenv/config";
 import { defineConfig } from "prisma/config";
 
@@ -46,5 +50,5 @@ export default defineConfig({
     url: process.env["DATABASE_URL"],
   },
 });
-
+```
 

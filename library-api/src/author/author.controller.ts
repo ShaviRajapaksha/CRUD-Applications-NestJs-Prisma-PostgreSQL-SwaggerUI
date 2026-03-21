@@ -6,7 +6,7 @@ import { CreateAuthorDto } from './dto/create-author.dto';
 @ApiTags('author')
 @Controller('author')
 export class AuthorController {
-    constructor(readonly service: AuthorService) {}
+    constructor(private service: AuthorService) {}
 
     @Post()
     Create(@Body() dto: CreateAuthorDto) {

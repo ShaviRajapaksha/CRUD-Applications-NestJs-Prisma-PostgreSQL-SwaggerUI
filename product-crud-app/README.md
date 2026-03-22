@@ -1,3 +1,12 @@
+# Schema.prisma
+```js
+generator client {
+  provider = "prisma-client-js"
+  //make sure to add this if prisma client doesnt generate
+  output   = "../node_modules/.prisma/client"
+}
+```
+
 # main.ts
 
 ```js

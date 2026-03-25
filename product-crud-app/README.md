@@ -1,6 +1,7 @@
 # Schema.prisma
 ```js
 generator client {
+  //make sure to add js in prisma-client-js, not primsa-client, Without this, PrismaClient will be broken → $connect missing
   provider = "prisma-client-js"
   //make sure to add this if prisma client doesnt generate
   output   = "../node_modules/.prisma/client"

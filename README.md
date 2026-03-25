@@ -1,1 +1,1 @@
-
+#### A simple backend CRUD application built with NestJS, Prisma ORM, and PostgreSQL to understand core backend development concepts. It demonstrates how to create, read, update, and delete data through structured APIs, manage database interactions using an ORM, and organize code with a modular architecture. Ideal for learning request handling, data modeling, and API testing using tools like Swagger.

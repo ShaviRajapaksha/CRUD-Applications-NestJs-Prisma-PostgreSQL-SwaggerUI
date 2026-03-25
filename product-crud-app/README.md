@@ -26,6 +26,8 @@ dotenv.config();
 ```js
 import { Injectable, OnModuleInit } from "@nestjs/common";
 import { PrismaClient } from "@prisma/client";
+//npm install @prisma/adapter-pg pg                                                  
+//npm install -D @types/pg
 import { PrismaPg } from "@prisma/adapter-pg";
 
 @Injectable()

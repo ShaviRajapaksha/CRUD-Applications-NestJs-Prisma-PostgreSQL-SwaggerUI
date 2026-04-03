@@ -24,6 +24,9 @@ dotenv.config();
     .build();
 ```
 # prisma service.ts
+```bash
+npm install @prisma/adapter-pg pg
+```
 ```js
 import { Injectable, OnModuleInit } from "@nestjs/common";
 import { PrismaClient } from "@prisma/client";

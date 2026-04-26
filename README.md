@@ -1,3 +1,7 @@
+nest commands:
+```bash
+nest g resource resource_name    
+```
 # Schema.prisma
 ```js
 generator client {

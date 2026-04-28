@@ -6,6 +6,9 @@ generator client {
   //make sure to add this if prisma client doesnt generate
   //prisma7
   output   = "../node_modules/.prisma/client"
+
+  //or only this
+  provider = "prisma-client-js"
 }
 ```
 
